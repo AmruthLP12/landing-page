@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React from "react";
 
@@ -22,7 +22,10 @@ const Hero = () => {
               </p>
             </div>
             {/* Heading */}
-            <h1 className="text-2xl sm:text-4xl md:text-5xl mt-6 mb-6 font-bold md:leading-[3rem] lg:leading-[3.5rem]">
+            <h1
+              data-aos="fade-up"
+              className="text-2xl sm:text-4xl md:text-5xl mt-6 mb-6 font-bold md:leading-[3rem] lg:leading-[3.5rem]"
+            >
               The premier workspace companion for your daily needs.
             </h1>
             {/* Description */}
@@ -50,7 +53,11 @@ const Hero = () => {
             </div>
           </div>
           {/* Image Content */}
-          <div className="hidden lg:block">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="hidden lg:block"
+          >
             <Image src="/images/hero.png" alt="hero" width={700} height={700} />
           </div>
         </div>
